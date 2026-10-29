@@ -21,7 +21,7 @@
     list-style: circle;
 }
 
-.header__links-list-item_no-bullit {
+.header__links-list-item_no-bullet {
     list-style: none;
 }
 
@@ -81,6 +81,8 @@
     padding: 165px 50px 0 50px;
     display: grid;
     row-gap: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .aligned-text {
@@ -105,12 +107,14 @@
     display: flex;
     font-size: 22px;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 1.27;
     text-transform: uppercase;
     justify-content: space-between;
     align-items: center;
     color: #fff;
     padding: 106px 50px 50px 50px;
+    position: relative;
+    z-index: 1;
 }
 
 .cover__description-text {
@@ -125,8 +129,7 @@
     border: 1px solid #fff;
     padding: 11px 31px;
     cursor: pointer;
-    width: 256px;
-    height: 51px;
+    min-width: 256px;
 }
 
 /* лоты */
@@ -173,8 +176,6 @@
     position: relative;
 }
 
-.cover__title,
-.cover__description,
 .card__title,
 .card__text {
     position: relative;
@@ -258,7 +259,7 @@
 .about__text {
     font-size: 20px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.2;
     color: #000;
     display: flex;
     flex-direction: column;
@@ -274,8 +275,7 @@
     padding: 0 50px 82px;
 }
 
-.footer__menu-list,
-.footer__social-list {
+.footer__menu-list {
     list-style: none;
 }
 
@@ -293,6 +293,7 @@
 }
 
 .footer__social-list {
+    list-style: none;
     display: flex;
     gap: 48px;
     justify-self: end;
